@@ -1,18 +1,12 @@
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' Algorithme qui créer
+#'
+#' @param matrice_vide : sudoku à compléter
+#' @return le nombre de retour effectué pour résoudre le sudoku
 
-library(grid)
-library(gridExtra)
 
 #Fonction qui créer une grille de sudoku
 create_Sudoku <- function (){
+  library(gridExtra)
   mat<-matrix(0, ncol = 9,nrow=9)
 
   #remplissage du bloc 1x1(1), 1x2(2), 1x3(3)

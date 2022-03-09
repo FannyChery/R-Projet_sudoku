@@ -1,3 +1,9 @@
+#'
+#'
+#' @param matrice_vide : sudoku à compléter
+#' @return le nombre de retour effectué pour résoudre le sudoku
+
+
 #Fonction qui retourne un vecteur avec les possibilités d'une case
 possibilite <- function (i, j, matrice_vide){
   posib <- vector()

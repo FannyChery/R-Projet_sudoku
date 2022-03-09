@@ -1,7 +1,7 @@
 #' Algorithme de Backtraking
 #'
 #' @param matrice_vide : sudoku à compléter
-#' @return le competur
+#' @return le nombre de retour effectué pour résoudre le sudoku
 
 
 #Algorithme de Backtraking
