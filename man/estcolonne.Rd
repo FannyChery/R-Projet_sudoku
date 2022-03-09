@@ -2,7 +2,7 @@
 % Please edit documentation in R/Estcolonne.R
 \name{estcolonne}
 \alias{estcolonne}
-\title{Fonction qui retourne TRUE si une valeur donnée et dans une colonne choisie, FALSE sinon}
+\title{Fonction qui retourne TRUE si une valeur donnée est dans une colonne donnée, FALSE sinon}
 \usage{
 estcolonne(val, j, matrice)
 }
@@ -17,5 +17,5 @@ estcolonne(val, j, matrice)
 TRUE or FALSE
 }
 \description{
-Fonction qui retourne TRUE si une valeur donnée et dans une colonne choisie, FALSE sinon
+Fonction qui retourne TRUE si une valeur donnée est dans une colonne donnée, FALSE sinon
 }

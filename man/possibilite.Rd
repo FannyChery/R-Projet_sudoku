@@ -2,16 +2,20 @@
 % Please edit documentation in R/Possibilite_vecteur.R
 \name{possibilite}
 \alias{possibilite}
-\title{Fonction}
+\title{Fonction qui retourne le vecteur avec les valeurs possibles de la case voulue}
 \usage{
 possibilite(i, j, matrice_vide)
 }
 \arguments{
-\item{matrice_vide}{: sudoku à compléter}
+\item{i}{: ligne de la case}
+
+\item{j}{: colonne de la case}
+
+\item{matrice_vide}{: matrice 9x9, c'est la grille de sudoku à complété}
 }
 \value{
-le nombre de retour effectué pour résoudre le sudoku
+le vecteur avec les valeurs possibles d'une case ordonnée par ordre croissant
 }
 \description{
-Fonction
+Fonction qui retourne le vecteur avec les valeurs possibles de la case voulue
 }
