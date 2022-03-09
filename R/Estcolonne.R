@@ -1,4 +1,4 @@
-#' Fonction qui retourne TRUE si une valeur donnée et dans une colonne choisie, FALSE sinon
+#' Fonction qui retourne TRUE si une valeur donnée est dans une colonne donnée, FALSE sinon
 #'
 #' @param val : la valeur à tester
 #' @param j : la colonne où l'on veut regarder si il y a la valeur

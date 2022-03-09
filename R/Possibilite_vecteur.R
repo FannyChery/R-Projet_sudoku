@@ -1,4 +1,4 @@
-#'
+#'Fonction
 #'
 #' @param matrice_vide : sudoku à compléter
 #' @return le nombre de retour effectué pour résoudre le sudoku

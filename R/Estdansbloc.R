@@ -1,3 +1,10 @@
+#' Fonction qui retourne TRUE si une valeur donnée et dans un bloc choisi, FALSE sinon
+#'
+#' @param val : la valeur à tester
+#' @param b : le bloc où l'on veut regarder si il y a la valeur
+#' @param matrice_vide : matrice 9x9 avec des cases vides, c'est la grille de sudoku à compléter
+#' @return TRUE or FALSE
+
 #Fonction qui retourne si une valeur ce trouve dans le bloc b ou non
 estdansbloc <- function(val, b, matrice){
   if(b == 1){
