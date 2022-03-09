@@ -1,7 +1,7 @@
 #' Algorithme de Backtraking
 #'
-#' @param matrice_vide : sudoku à compléter
-#' @return le nombre de retour effectué pour résoudre le sudoku
+#' @param matrice_vide : matrice 9x9 avec des cases vides, c'est la grille de sudoku à compléter
+#' @return compteur = le nombre de retour effectué pour résoudre le sudoku
 
 
 #Algorithme de Backtraking

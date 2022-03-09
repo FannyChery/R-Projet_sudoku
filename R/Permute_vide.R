@@ -23,6 +23,6 @@ permute_vide <- function (matrice_complet){
     matrice_complet[sort(sample.int(9, 1)),sort(sample.int(9, 1))] = " "
   }
 
-  grille(matrice_complet)
+  grid.table(matrice_complet)
   return(matrice_complet)
 }
