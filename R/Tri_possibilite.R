@@ -1,3 +1,10 @@
+#' Fonction q
+#'
+#' @param count_matrice : matrice 9x9 avec dans les cases qui sont à compléter
+#' @return Affiche la matrice avec les ordres des cases triés.
+#'
+
+
 #Fonction qui ordonne les cases vides en fonction des nb de possibilité
 tri_possibilite <- function (count_matrice){
   countmat <- matrix(" ", nrow = 9, ncol = 9)
