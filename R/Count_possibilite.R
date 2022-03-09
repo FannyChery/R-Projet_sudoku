@@ -16,10 +16,10 @@ count_pos <- function (matrice){
           if((estligne(k,i,matrice)==FALSE) &
              (estcolonne(k,j,matrice)==FALSE) &
              (estdansbloc(k,bloc(i,j), matrice))==FALSE){
-            compteur = compteur + 1
+            compteur <- compteur + 1
           }
         }
-        count[i,j] = compteur
+        count[i,j] <- compteur
       }
     }
   }

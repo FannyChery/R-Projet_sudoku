@@ -8,7 +8,7 @@
 
 #Fonction qui compte le nb de possibilité par case
 nbpossib_case <- function (i, j, matrice_vide){
-  nb = 0
+  nb <- 0
   if(matrice_vide[i,j] != " "){
     return(nb)
   }
@@ -17,7 +17,7 @@ nbpossib_case <- function (i, j, matrice_vide){
       if((estligne(k, i, matrice_vide) == FALSE) &
          (estcolonne(k, j, matrice_vide) == FALSE) &
          (estdansbloc(k, bloc(i,j), matrice_vide)) == FALSE){
-        nb = nb + 1
+        nb <- nb + 1
       }
     }
   }
