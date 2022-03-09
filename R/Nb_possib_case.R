@@ -1,8 +1,8 @@
 #'Fonction qui retourne le nombre de valeurs possibles à mettre dans une case
 #'
-#' @param i : ligne de la case choisie
-#' @param j : colonne de la case choisie
-#' @param matrice_vide : sudoku à compléter
+#' @param i : ligne de la case
+#' @param j : colonne de la case
+#' @param matrice_vide : matrice 9x9, c'est la grille de sudoku à compléter
 #' @return le nombre de retour effectué pour résoudre le sudoku
 
 

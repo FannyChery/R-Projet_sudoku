@@ -1,7 +1,9 @@
-#'Fonction
+#' Fonction qui retourne le vecteur avec les valeurs possibles de la case voulue
 #'
-#' @param matrice_vide : sudoku à compléter
-#' @return le nombre de retour effectué pour résoudre le sudoku
+#' @param i : ligne de la case
+#' @param j : colonne de la case
+#' @param matrice_vide : matrice 9x9, c'est la grille de sudoku à complété
+#' @return le vecteur avec les valeurs possibles d'une case ordonnée par ordre croissant
 
 
 #Fonction qui retourne un vecteur avec les possibilités d'une case

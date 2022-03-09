@@ -1,3 +1,9 @@
+#' Fonction qui permute aléatoirement les lignes et les colonnes d'un même bloc
+#'
+#' @param matrice_complet : matrice 9x9 complète
+#' @return Affiche la nouvelle matrice avec ses lignes et ses colonnes permutées aléatoirement
+#'
+
 #Fonction qui permute aléatoirement des lignes et des colonnes
 permute <- function (matrice_complet){
   #permutation ligne
