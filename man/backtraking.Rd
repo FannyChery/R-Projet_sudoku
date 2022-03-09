@@ -7,10 +7,10 @@
 backtraking(matrice_vide)
 }
 \arguments{
-\item{matrice_vide}{: sudoku à compléter}
+\item{matrice_vide}{: matrice 9x9 avec des cases vides, c'est la grille de sudoku à compléter}
 }
 \value{
-le competur
+compteur = le nombre de retour effectué pour résoudre le sudoku
 }
 \description{
 Algorithme de Backtraking

@@ -1,7 +1,6 @@
-#' Algorithme qui créer
+#' Fonction qui créer une grille de sudoku
 #'
-#' @param matrice_vide : sudoku à compléter
-#' @return le nombre de retour effectué pour résoudre le sudoku
+#' @return affiche une grille de sudoku complète
 
 
 #Fonction qui créer une grille de sudoku

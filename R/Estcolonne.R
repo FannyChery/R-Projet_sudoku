@@ -1,3 +1,10 @@
+#' Fonction qui retourne TRUE si une valeur donnée et dans une colonne choisie, FALSE sinon
+#'
+#' @param val : la valeur à tester
+#' @param j : la colonne où l'on veut regarder si il y a la valeur
+#' @param matrice_vide : matrice 9x9 avec des cases vides, c'est la grille de sudoku à compléter
+#' @return TRUE or FALSE
+
 #Fonction qui donne TRUE si une valeur est dans une colonne
 estcolonne <- function (val, j, matrice){
   compteur = 0

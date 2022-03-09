@@ -1,3 +1,8 @@
+#' Fonction qui retourne TRUE si la matrice est complète, ie le sudoku est complet
+#'
+#' @param matrice : matrice 9x9
+#' @return TRUE or FALSE
+
 #Fonction qui renvoie si le sudoku est complet ou non
 est_complet <- function (matrice){
   alors = 0
