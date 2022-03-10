@@ -4,9 +4,7 @@
 #'
 
 #Fonction qui retourne une grille de sudoku à compléter
-SUDOKU <- function (){
-  mat <- create_Sudoku()
-  Mat <- permute(mat)
-  MAT <- vide(Mat)
+SUDOKU <- function (mat){
+  MAT <- vide(mat)
   grid.table(MAT)
 }

@@ -1,7 +1,6 @@
 library(gridExtra)
 library(shiny)
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
     # Application title
@@ -9,17 +8,19 @@ shinyUI(fluidPage(
 
     # Gère la partie gauche de l'app
     sidebarPanel(
-      selectInput("select", label = h3("Faites votre choix"),
-                  choices = list("Génerer sudoku complet",
-                                 "Génerer sudoku incomplet",
-                                 "Résoudre le sudoku")),
-    hr(),
-    verbatimTextOutput("value")
+      hr(),
+      actionButton("jouer" , "jouer"),
+      hr(),
+      actionButton("sol","solution"),
+      hr(),
+      verbatimTextOutput("value")
     ),
 
         # gère la partie droite de l'app
         mainPanel(
-          plotOutput("sudoku")
+          plotOutput("sudoku"),
+          plotOutput("solver")
+
         )
     )
 )
