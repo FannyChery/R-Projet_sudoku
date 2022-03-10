@@ -1,4 +1,4 @@
-### Jeu du Sudoku
+# Jeu du Sudoku
 Ce projet est un package R nommé 'SUDO' avec une interface graphique crée avec shiny. Cette application shiny permet de jouer au Sudoku, de générer des grilles aléatoires et leurs solutions.
 
 ## Règle du jeu:
