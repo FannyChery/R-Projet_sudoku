@@ -14,19 +14,19 @@ library(shiny)
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("grille de sudoku"),
+    titlePanel("Grille de Sudoku"),
 
     # gere la partie gauche de l'app
     sidebarPanel(
       selectInput("select", label = h3("Faites votre choix"),
-                  choices = list("generer sudoku complet", 
-                                 "generer sudoku incomplet",
-                                 "resoudre le sudoku")),
+                  choices = list("Génerer sudoku complet",
+                                 "Génerer sudoku incomplet",
+                                 "Résoudre le sudoku")),
     hr(),
     verbatimTextOutput("value")
-    ), 
+    ),
 
-        # gere la partie droite de l'app
+        # gère la partie droite de l'app
         mainPanel(
           plotOutput("sudoku")
         )
