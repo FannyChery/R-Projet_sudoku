@@ -20,7 +20,7 @@ shinyUI(fluidPage(
     sidebarPanel(
       selectInput("select", label = h3("Faites votre choix"),
                   choices = list("generer sudoku complet", 
-                                 "genere sudoku incomplet",
+                                 "generer sudoku incomplet",
                                  "resoudre le sudoku")),
     hr(),
     verbatimTextOutput("value")
