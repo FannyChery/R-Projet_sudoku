@@ -7,27 +7,28 @@
 #    http://shiny.rstudio.com/
 #
 
+library(gridExtra)
 library(shiny)
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("grille de sudoku"),
 
-    # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
+    # gere la partie gauche de l'app
+    sidebarPanel(
+      selectInput("select", label = h3("Faites votre choix"),
+                  choices = list("generer sudoku complet", 
+                                 "genere sudoku incomplet",
+                                 "resoudre le sudoku")),
+    hr(),
+    verbatimTextOutput("value")
+    ), 
 
-        # Show a plot of the generated distribution
+        # gere la partie droite de l'app
         mainPanel(
-            plotOutput("distPlot")
+          plotOutput("sudoku")
         )
     )
-))
+)
