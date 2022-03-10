@@ -23,4 +23,5 @@ $ # Commande pour installer le package 'shinyWidgets'
 $ install.packages("shinyWidgets")
 $ library(shinyWidgets)
 ```
-Ce projet a été créer en collaboration avec Olivier Côme et Fanny Chery
+Ce projet a été créer en collaboration avec Olivier Côme et Fanny Chery.
+
