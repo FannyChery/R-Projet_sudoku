@@ -7,7 +7,7 @@ shinyUI(fluidPage(
     # Application title
     titlePanel("Grille de Sudoku"),
 
-    # gere la partie gauche de l'app
+    # Gère la partie gauche de l'app
     sidebarPanel(
       selectInput("select", label = h3("Faites votre choix"),
                   choices = list("Génerer sudoku complet",
