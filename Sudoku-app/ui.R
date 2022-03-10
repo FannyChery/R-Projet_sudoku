@@ -9,9 +9,9 @@ shinyUI(fluidPage(
     # Gère la partie gauche de l'app
     sidebarPanel(
       hr(),
-      actionButton("jouer" , "jouer"),
+      actionButton("jouer" , "Jouer"),
       hr(),
-      actionButton("sol","solution"),
+      actionButton("sol","Solution"),
       hr(),
       verbatimTextOutput("value")
     ),
