@@ -12,12 +12,15 @@ Il existe 4 niveaux de jeu :
 - Expert : plus de 10 0000
 
 ## Installation préalables pour l'utilisation du package
+
+```
 $ # Commande pour installer le package 'gridExtra'
 $ install.packages("gridExtra")
 $ library(gridExtra)
-
+```
+```
 $ # Commande pour installer le package 'shinyWidgets'
 $ install.packages("shinyWidgets")
 $ library(shinyWidgets)
-
+```
 Ce projet a été créer en collaboration avec Olivier Côme et Fanny Chery
