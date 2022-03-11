@@ -4,17 +4,22 @@ library(shiny)
 devtools::load_all()
 
 shinyServer(function(input, output) {
+  observeEvent(input$jouer,{
+    a <- create_Sudoku()
+    b <- permute(a)
+    output$sudoku <- renderPlot({
+      #mettre ta matrice générée aléatoirement
+      SUDOKU(b)
+    })
+    observeEvent(input$sol,{
 
-  output$sudoku <- renderPlot({
-    if (input$button == "jouer"){
-      m = create_Sudoku()
-      mat_complete <<- permute(m)
-      mat_incomplete <<- SUDOKU(mat_complete)
-      sudoku = mat_incomplete
-    } else {
-        sudoku = mat_complete
-    }
-    grid.table(sudoku)
+      output$solver <- renderPlot({
+
+        #mettre ta matrice générée aléatoirement
+        grid.table(b)
+      })
+    })
+
+
   })
-
 })

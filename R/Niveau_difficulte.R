@@ -1,11 +1,10 @@
 #' Affiche le niveau de difficulté
 #'
-#' @param MAT : matrice de taille 9x9, c'est la grille de sudoku à compléter
+#' @param p : le nombre de retour calculé pour par la fonction 'backtraking' pour résoudre la grille
 #' @return affiche le niveau de difficulté du sudoku
 
 #Fonction qui affiche une grille de sudoku
-niveau <- function (MAT){
-  p = backtraking(MAT)
+niveau <- function (p){
   if (p < 1000){
     return ('Facile')
   }

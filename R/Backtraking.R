@@ -9,7 +9,6 @@ backtraking <- function (matrice_vide){
   comp <- 0
   pos <- 1
   case <- nb_case_vide(matrice_vide)
-  print(c('nb case vide = ', case))
   tab <- tableau(matrice_vide)
   while (est_complet(matrice_vide) != TRUE){
     val <- matrice_vide[tab[pos,1], tab[pos,2]]
@@ -37,11 +36,12 @@ backtraking <- function (matrice_vide){
       pos <- pos + 1
     }
   }
-  grille(matrice_vide)
   return(c("compteur =", comp))
 }
 
 
-#mat = create_Sudoku()
-#MAT = permute_vide(mat)
-#backtraking(MAT)
+mat = create_Sudoku()
+Mat = permute(mat)
+MAT = vide(Mat)
+o = backtraking(MAT)
+ni = niveau(MAT)
