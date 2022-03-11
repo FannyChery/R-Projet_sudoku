@@ -4,7 +4,7 @@ library(shiny)
 devtools::load_all()
 
 shinyServer(function(input, output) {
-  
+
   output$sudoku <- renderPlot({
     if (input$button == "jouer"){
       m = create_Sudoku()
@@ -16,5 +16,5 @@ shinyServer(function(input, output) {
     }
     grid.table(sudoku)
   })
-  
+
 })
