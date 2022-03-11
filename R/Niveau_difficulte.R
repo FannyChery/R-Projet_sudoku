@@ -1,4 +1,4 @@
-#' Affiche le niveau de difficulté
+#' Affiche le niveau de difficulté du sudoku
 #'
 #' @param p : le nombre de retour calculé pour par la fonction 'backtraking' pour résoudre la grille
 #' @return affiche le niveau de difficulté du sudoku
