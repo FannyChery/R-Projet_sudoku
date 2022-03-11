@@ -1,26 +1,32 @@
 library(gridExtra)
 library(shiny)
 
+# Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Grille de Sudoku"),
+    titlePanel("Sudoku game by Fanny Chery and Olivier COME"),
 
-    # Gère la partie gauche de l'app
+    # gere la partie gauche de l'app
     sidebarPanel(
-      hr(),
-      actionButton("jouer" , "Jouer"),
-      hr(),
-      actionButton("sol","Solution"),
-      hr(),
-      verbatimTextOutput("value")
-    ),
+      selectInput("select", label = h4("Faites votre choix"),
+                  choices = list("initialisation", "Jouer",
+                                 "Donner la solution sans backtracking",
+                                 "resoudre le sudoku avec backtracking"),
+                  selected = ""),
+    hr(),
+    #verbatimTextOutput("value"),
+    
+    selectInput("level", label = h4("Niveau de difficulte"),
+                choices = list("", "facile", "moyen", "difficile"),
+                selected = ""),
+    hr(),
+    #verbatimTextOutput("value")
+    ), 
 
-        # gère la partie droite de l'app
+        # gere la partie droite de l'app
         mainPanel(
-          plotOutput("sudoku"),
-          plotOutput("solver")
-
+          plotOutput("sudoku")
         )
     )
 )
