@@ -40,8 +40,8 @@ backtraking <- function (matrice_vide){
 }
 
 
-mat = create_Sudoku()
-Mat = permute(mat)
-MAT = vide(Mat)
-o = backtraking(MAT)
-ni = niveau(MAT)
+#mat = create_Sudoku()
+#Mat = permute(mat)
+#MAT = vide(Mat)
+#o = backtraking(MAT)
+#ni = niveau(MAT)
