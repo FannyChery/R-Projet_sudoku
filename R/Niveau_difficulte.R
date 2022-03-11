@@ -9,13 +9,13 @@ niveau <- function (MAT){
   if (p < 1000){
     return ('Facile')
   }
-  if ((p => 1000)&(p < 5000)){
+  if ((p >= 1000)&(p < 5000)){
     return ('Intermédiaire')
   }
-  if ((p => 5000)&(p < 10000)){
+  if ((p >= 5000)&(p < 10000)){
     return ('Difficile')
   }
-  if (p => 10000){
+  if (p >= 10000){
     return ('Expert')
   }
 }
