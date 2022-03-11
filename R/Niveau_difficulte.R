@@ -1,7 +1,7 @@
 #' Affiche le niveau de difficulté
 #'
-#' @param matrice : matrice de taille 9x9
-#' @return affiche une matrice avec la fonction 'grid.table' du package gridExtra
+#' @param matrice : matrice de taille 9x9, c'est la grille de sudoku à compléter
+#' @return affiche le niveau de difficulté du sudoku
 
 #Fonction qui affiche une grille de sudoku
 niveau <- function (MAT){
