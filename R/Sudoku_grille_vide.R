@@ -7,4 +7,5 @@
 SUDOKU <- function (mat){
   MAT <- vide(mat)
   grid.table(MAT)
+  return(MAT)
 }
