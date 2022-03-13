@@ -36,7 +36,8 @@ backtraking <- function (matrice_vide){
       pos <- pos + 1
     }
   }
-  return(c("compteur =", comp))
+  l = list(comp, matrice_vide)
+  return(l)
 }
 
 
