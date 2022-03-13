@@ -9,7 +9,7 @@ Il existe 4 niveaux de jeu :
 - Facile : moins de 1 000 backtrakings, ce qui correspond à 45 cases vides.
 - Intermédiaire : de 1 000 à 5 000 backtrakings, ce qui correspond à 50 cases vides.
 - Difficile : 5 000 à 10 000 backtrakings, ce qui correspond à 52 cases vides.
-- Expert : plus de 10 0000 backtrakings, ce qui correspond à 55 cases vides.
+- Expert : plus de 10 000 backtrakings, ce qui correspond à 55 cases vides.
 
 ## Installation préalables pour l'utilisation du package
 
