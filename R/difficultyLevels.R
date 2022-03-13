@@ -11,7 +11,6 @@ generateLevelMat = function(level){
         n = n + 1
       }
     }
-    
   }else if (level == "Intermediaire"){
     while (n < 1) {
       middleMat = delete_val(mat_complete, 50)
