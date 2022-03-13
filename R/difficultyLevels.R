@@ -40,3 +40,4 @@ generateLevelMat = function(level){
     }
   }
   return(matLevel)
+}
