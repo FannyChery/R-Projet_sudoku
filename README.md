@@ -6,10 +6,10 @@ Sudoku est joué sur une grille de 9 x 9 espaces. Dans les lignes et les colonne
 Chaque rangée, colonne et carré (9 espaces chacun) doit être rempli avec les numéros de 1 à 9, sans répéter aucun nombre dans la rangée, la colonne ou le carré. 
 
 Il existe 4 niveaux de jeu :
-- Facile : moins de 1 000
-- Intermédiaire : de 1 000 à 5 000
-- Difficile : 5 000 à 10 000
-- Expert : plus de 10 0000
+- Facile : moins de 1 000 backtrakings, ce qui correspond à 45 cases vides.
+- Intermédiaire : de 1 000 à 5 000 backtrakings, ce qui correspond à 50 cases vides.
+- Difficile : 5 000 à 10 000 backtrakings, ce qui correspond à 52 cases vides.
+- Expert : plus de 10 0000 backtrakings, ce qui correspond à 55 cases vides.
 
 ## Installation préalables pour l'utilisation du package
 
