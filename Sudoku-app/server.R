@@ -1,25 +1,28 @@
 library(gridExtra)
 library(shiny)
-
 devtools::load_all()
 
 shinyServer(function(input, output) {
-  observeEvent(input$jouer,{
-    a <- create_Sudoku()
-    b <- permute(a)
-    output$sudoku <- renderPlot({
-      #mettre ta matrice générée aléatoirement
-      SUDOKU(b)
+  observeEvent(input$button1,{
+    level <<- input$select
+    sudoku <<- generateLevelMat(level)
+    output$sudoku = renderPlot({
+      t = paste("Sudoku de niveau ", level)
+      title(t)
+      grid.table(sudoku)
     })
-    observeEvent(input$sol,{
-
-      output$solver <- renderPlot({
-
-        #mettre ta matrice générée aléatoirement
-        grid.table(b)
-      })
-    })
-
-
   })
+  
+  observeEvent(input$button2,{
+    mat_incomplete = sudoku
+    res = backtraking(mat_incomplete)[2]
+    sudoku = matrix(unlist(res), ncol = 9, nrow = 9)
+    output$sudoku = renderPlot({
+      t = paste("Sudoku de niveau ", level, " resolu")
+      title(t)
+      grid.table(sudoku)
+    })
+  })
+  
+  #output$value <- renderPrint({ input$select })
 })
