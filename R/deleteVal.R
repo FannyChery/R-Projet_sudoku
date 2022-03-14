@@ -1,7 +1,7 @@
 #' Fonction qui supprime un nombre donné de valeurs dans la matrice à des positions aléatoires
 #'
 #' @param matrice : matrice 9x9
-#' @return une matrice avec n valeurs suprrimées à des postions aléatoires
+#' @return une matrice avec n valeurs supprimées à des positions aléatoires
 
 delete_val = function(mat, n){
   z = nbOfZero(mat)
