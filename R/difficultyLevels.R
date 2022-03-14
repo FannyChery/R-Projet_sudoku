@@ -1,7 +1,7 @@
 #' Fonction qui retourne une matrice de sudoku incomplète associée à un niveau de difficulté renseigné par l'utilisateur
 #'
 #' @param matrice : une chaine de caractère désignant le niveau de difficulté ("Facile", "Intermediaire", "Difficile", "Expert")
-#' @return une matrice de sudoku incomplète associée à un niveau de difficulté
+#' @return une matrice de sudoku incomplète (i.e avec des cases vides) associée à un niveau de difficulté
 
 generateLevelMat = function(level){
   n = 0
