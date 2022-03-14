@@ -1,40 +1,40 @@
 library(gridExtra)
 library(shiny)
-
 devtools::load_all()
 
+# Define UI for application of sudoku game
 shinyUI(fluidPage(
 
-  # Application title
-  titlePanel("Grille de Sudoku"),
+    # Application title
+    titlePanel("Sudoku game by Fanny Chery and Olivier COME"),
 
-  # Gère la partie gauche de l'app
-  sidebarPanel(
+    # gere la partie gauche de l'application
+    sidebarPanel(
+      selectInput("select", label = h3("Choisissez le niveau de difficulte"),
+                  choices = list("", "Facile",
+                                 "Intermediaire", "Difficile",
+                                 "Expert"),
+                  selected = ""),
     hr(),
-    selectInput("level", label = h4("Niveau de difficulté"),
-                choices = list("", "Facile", "Intermediaire", "Difficile",
-                               "Expert"),
-                selected = ""),
+    #verbatimTextOutput("value"),
+    
+    fluidRow(
+      actionButton("button1", "jouer")
+    ),
+    
     hr(),
-    actionButton("jouer" , "Jouer"),
+    
+    fluidRow(
+      actionButton("button2", "solution")
+    ),
     hr(),
-    actionButton("sol","Solution"),
-    hr(),
-    verbatimTextOutput("value"),
-    hr(),
+    #verbatimTextOutput("value")
+    ), 
 
-  ),
-
-  # gère la partie droite de l'app
-  mainPanel(
-    plotOutput("sudoku"),
-    titlePanel("Descendez la page, pour voir la solution."),
-    br(),
-    br(),
-    br(),
-    br(),
-    plotOutput("solver")
-
-  )
-)
+        # gere la partie droite de l'application
+        mainPanel(
+          plotOutput("sudoku"),
+          #plotOutput("sol")
+        )
+    )
 )
